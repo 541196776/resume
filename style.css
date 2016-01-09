@@ -1,0 +1,31 @@
+body{
+	margin:0px;
+	padding:0px;
+}
+.section-1{
+	background-color:#FF0004;
+}
+.section-2{
+	background-color:#FFFD00;
+}
+.section-3{
+	background-color:#0AFF00;
+}
+.setion-4{
+	background-color:#0015FF;
+}
+.header{
+	position:fixed;
+	top: 0px;
+	left: 5px;
+	
+}
+#myMenu{
+	margin-right:10px;
+	z-index:999;
+	position: absolute;
+}
+#myMenu li{
+	float:left;
+	margin-left:10px;
+}
