@@ -4,28 +4,44 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Web前端设计</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/jquery.fullPage.css" />
+<link rel="stylesheet" href="css/jquery.fullPage.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/jquery.fullPage.js"></script>
-<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-<!--<ul id="myMenu">
-    <li data-menuanchor="page1" class="active"><a href="#page1">First section</a></li>
-    <li data-menuanchor="page2"><a href="#page2">Second section</a></li>
-    <li data-menuanchor="page3"><a href="#page3">Third section</a></li>
-    <li data-menuanchor="page4"><a href="#page4">Fourth section</a></li>
-</ul>-->
-<div id="fullpage">
-<div class="section section-1 active"></div>
-    <div class="section section-2">
-    	<div class="slide"></div>
-        <div class="slide"></div>
-        <div class="slide"></div>
-     ,</div>
-    <div class="section section-3"></div>
-    <div class="section section-4"></div>
+<ul id="myMenu">
+    <li data-menuanchor="page1" class="active"><a href="#page1">介绍</a></li>
+    <li data-menuanchor="page2"><a href="#page2">职能与作品</a></li>
+    <li data-menuanchor="page3"><a href="#page3">实践经历</a></li>
+    <li data-menuanchor="page4"><a href="#page4">联系我</a></li>
+</ul>
+<div id="fullpage"> 
+        <div class="section section-1 active">
+              <div class="back-black"></div>
+              <div class="frame"></div>
+              <div class="head">
+                  <span class="head-1"></span>
+                  <span class="head-2"></span>
+              </div>
+              <div class="text" >
+                  <p>我叫 程梓健 ，21岁。</p>
+                  <p>毕业于深圳信息学院，专业是计算机应用技术。</p>
+                  <p>由于不但喜欢计算机，而且对艺术设计有着浓厚的兴趣。</p>
+                  <p>于是自学Web前端设计，</p>
+                  <p>并希望能够从事Web前端设计工程师的职位。</p>
+                  <span class="next"></span>
+              </div>
+              
+        </div>
+        <div class="section section-2">
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+        </div>
+        <div class="section section-3"></div>
+        <div class="section section-4"></div>
 </div>
 <script>
     $(document).ready(function(){
@@ -33,7 +49,8 @@
 			anchors:['page1','page2','page3','page4'],
 			loopBottom:true,
 			navigation:true,
-		    menu: '#myMenu'
+		    menu: '#myMenu',
+			continuousVertical:true
 			});
     });
 </script>
