@@ -71,7 +71,7 @@ body{
 }
 #myMenu{
 	margin-top:0px;
-	position: relative;
+	position: fixed;
 	z-index:99;
 	width:100%;
 	opacity:0.8;
