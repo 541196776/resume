@@ -27,11 +27,39 @@ body{
 }
 .text-1{
   position:relative;
-  animation:myfirst 3s;
-  -moz-animation:myfirst 3s; /* Firefox */
-  -webkit-animation:myfirst 3s; /* Safari and Chrome */
-  -o-animation:myfirst 3s; /* Opera */
+  animation:myfirst 0.5s;
+  -moz-animation:myfirst 0.5s; /* Firefox */
+  -webkit-animation:myfirst 0.5s; /* Safari and Chrome */
+  -o-animation:myfirst 0.5s; /* Opera */
 }
+.text-2{
+  position:relative;
+  animation:myfirst 1s;
+  -moz-animation:myfirst 1s; /* Firefox */
+  -webkit-animation:myfirst 1s; /* Safari and Chrome */
+  -o-animation:myfirst 1s; /* Opera */
+}
+.text-3{
+  position:relative;
+  animation:myfirst 1.5s;
+  -moz-animation:myfirst 1.5; /* Firefox */
+  -webkit-animation:myfirst 1.5s; /* Safari and Chrome */
+  -o-animation:myfirst 1.5s; /* Opera */
+}
+.text-4{
+  position:relative;
+  animation:myfirst 2s;
+  -moz-animation:myfirst 2s; /* Firefox */
+  -webkit-animation:myfirst 2s; /* Safari and Chrome */
+  -o-animation:myfirst 2s; /* Opera */
+} 
+.text-5{
+  position:relative;
+  animation:myfirst 2.5s;
+  -moz-animation:myfirst 2.5s; /* Firefox */
+  -webkit-animation:myfirst 2.5s; /* Safari and Chrome */
+  -o-animation:myfirst 2.5s; /* Opera */
+} 
 
 
 @keyframes myfirst
