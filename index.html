@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Web前端设计</title>
-<link rel="stylesheet" href="css/style.css" />
 <link rel="stylesheet" href="css/jquery.fullPage.css" />
+<link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -24,11 +24,11 @@
                   <span class="head-2"></span>
               </div>
               <div class="text" >
-                  <p>我叫 <font size="6px" color="rgb(46, 180, 240)">程梓健</font> ，21岁。</p>
-                  <p>毕业于深圳信息学院，专业是计算机应用技术。</p>
-                  <p>由于不但喜欢计算机，而且对艺术设计有着浓厚的兴趣。</p>
-                  <p>于是自学Web前端设计，</p>
-                  <p>并希望能够从事<font size="6px" color="rgb(46, 180, 240)">Web前端设计工程师</font>的相关职位。</p>
+                  <div class="text-1"><p>我叫 <font size="6px" color="#00a0e9">程梓健</font> ，21岁。</p></div>
+                  <p class="text-2">毕业于深圳信息学院，专业是计算机应用技术。</p>
+                  <p class="text-3">由于不但喜欢计算机，而且对艺术设计有着浓厚的兴趣。</p>
+                  <p class="text-4">于是自学Web前端设计，</p>
+                  <p class="text-5">并希望能够从事<font size="6px" color="#00a0e9">Web前端设计工程师</font>的相关职位。</p>
               </div>
               
         </div>
@@ -47,7 +47,7 @@
     	$('#fullpage').fullpage({
 			anchors:['page1','page2','page3','page4'],
 			navigation:true,
-		        menu: '#myMenu',
+		    menu: '#myMenu',
 			continuousVertical:true
 			});
     });

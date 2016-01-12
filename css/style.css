@@ -25,7 +25,38 @@ body{
 .text p{
 	word-wrap:break-word;
 }
+.text-1{
+  position:relative;
+  animation:myfirst 3s;
+  -moz-animation:myfirst 3s; /* Firefox */
+  -webkit-animation:myfirst 3s; /* Safari and Chrome */
+  -o-animation:myfirst 3s; /* Opera */
+}
 
+
+@keyframes myfirst
+{
+0%   {top:100px; opacity:0}
+100% {top:0px;opacity:1}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+0%   {top:100px; opacity:0}
+100% {top:0px;opacity:1}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+0%   {top:100px; opacity:0}
+100% {top:0px;opacity:1}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+0%   {top:100px; opacity:0}
+100% {top:0px;opacity:1}
+}
 .head{
   position:relative;
   width:224px;
@@ -78,9 +109,13 @@ body{
 	padding-top:10px;
 }
 #myMenu li{
-	float:left;
-	margin-right:20px;
+	float: left;
+	margin-right: 20px;
+	list-style: none;
 }
-
+#myMenu a{
+	color: #00A0E9;
+	text-decoration: none;
+}
 
 
