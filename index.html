@@ -6,6 +6,7 @@
 <title>Web前端设计</title>
 <link rel="stylesheet" href="css/jquery.fullPage.css" />
 <link rel="stylesheet" href="css/style.css" />
+
 </head>
 
 <body>
@@ -18,14 +19,14 @@
 </ul>
 </div>
 <div id="fullpage"> 
-        <div class="section section-1">
-        	  <div class="title"><p><font color="#00a0e9" size="+6">个人简历</font></p></div>
+        <div class="section section-1 active">
+        	  <div class="title1"><p><font color="#00a0e9" size="+6">个人简历</font></p></div>
               <div class="head">
                   <span class="head-1"></span> 
                   <span class="head-2"></span>
               </div>
               <div class="text" >
-                  <div class="text-1"><p>我叫 <font size="6px" color="#00a0e9">程梓健</font> ，21岁。</p></div>
+                  <p class="text-1">我叫 <font size="6px" color="#00a0e9">程梓健</font> ，21岁。</p>
                   <p class="text-2">毕业于深圳信息学院，专业是计算机应用技术。</p>
                   <p class="text-3">由于不但喜欢计算机，而且对艺术设计有着浓厚的兴趣。</p>
                   <p class="text-4">于是自学Web前端设计，</p>
@@ -33,18 +34,20 @@
               </div>
               
         </div>
-        <div class="section section-2 active">
-                  <div class="title"><p><font color="#00a0e9" size="+6">职业技能与作品展示</font></p></div>
+        <div class="section section-2 ">
+                  <div class="title2"><p><font color="#00a0e9" size="+6">职业技能与作品展示</font></p></div>
                <div class="list">
                		<p class="list-1">HTML\CSS</p>
                     <p class="list-2">Photoshop</p>
                     <p class="list-3">手绘</p>
                </div>
+               <div class="t1"></div>
         </div>
         <div class="section section-3"></div>
         <div class="section section-4"></div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
+<script src="js/move.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/jquery.fullPage.js"></script>
 <script>
     $(document).ready(function(){
@@ -52,7 +55,37 @@
 			anchors:['page1','page2','page3','page4'],
 			navigation:true,
 		    menu: '#myMenu',
-			continuousVertical:true
+			loopbottom:true,
+			afterLoad: function(Link, index){
+            	switch(index){
+					case 1:
+						move('.title1').set('opacity', 0.8).duration(1000).end();
+						move('.text-1').y(-200).duration(1000).end();
+						move('.text-2').y(-200).duration(1250).end();
+						move('.text-3').y(-200).duration(1500).end();
+						move('.text-4').y(-200).duration(1750).end();
+						move('.text-5').y(-200).duration(2000).end();
+						move('.head-1').scale(1.5).duration(2000).end();
+						move('.head-2').scale(2.0).duration(2000).end();
+						move('.head-2').set('opacity', 0).duration(2000).delay(1000).end();
+						break;
+				}
+					},
+			onLeave: function(Link, index){
+            	switch(index){
+					case 1:
+						move('.title1').set('opacity', 0).duration(1000).end();
+						move('.text-1').y(200).duration(0).end();
+						move('.text-2').y(200).duration(0).end();
+						move('.text-3').y(200).duration(0).end();
+						move('.text-4').y(200).duration(0).end();
+						move('.text-5').y(200).duration(0).end();
+						move('.head-1').scale(1).duration(0).end();
+						move('.head-2').scale(1).duration(0).end();
+						move('.head-2').set('opacity', 0.5).duration(0).end();
+						break;
+					}
+      	  	}
 			});
     });
 </script>
