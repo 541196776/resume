@@ -1,6 +1,7 @@
 body{
 	margin:0px;
 	padding:0px;
+  font-family:"Microsoft YaHei";
 }
 .menu{
 	float:right;
@@ -43,16 +44,13 @@ body{
 }
 .section-1{
 	background-image:url(../background/page-1.jpg);
-	height:auto;
 }
 .text{
-  font-size: 25px;
+  font-size: 20px;
   color: rgb(255, 255, 255);
   line-height: 1.2;
   text-align: center;
   position:relative;
-  width: auto;
-  height: auto;
   margin-left:auto;
   margin-right:auto;
   margin-top: 250px;
@@ -96,7 +94,7 @@ body{
 }
 
 .section-2{
-	background-color:#FFFD00;
+  background-image:url(../background/page-1.jpg);
 }
 .section-3{
 	background-color:#0AFF00;
@@ -104,31 +102,70 @@ body{
 .section-4{
 	background-color:#0015FF;
 }
-
-.section-2{
-	background-image:url(../background/page-1.jpg);
-	height:auto;
+.list-top {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto; 
+  top: 50px;
+  width: 900px;
+  padding: 50px;
 }
-.list{
-	font-size: 25px;
-	color: rgb(255, 255, 255);
-	text-align: left;
-	position: relative;
-	width: auto;
-	height: auto;
-	margin-left: 100px;
-	margin-top: 100px;
-	z-index: 10;
-	line-height: 50px;
-	}
-	.t1{
-  background-color: rgb(0, 160, 233);
+.list-bottom{
+  position: relative;
+  margin-right: auto;
+  margin-left: auto; 
+  width: 900px;
+  padding: 50px;
+}
+
+.list-1 {
+  width: 400px;
+  height: 300px;
+  position: relative;   
+  float: left;
+}
+.list-2 {
+  width: 400px;
+  height: 300px;
+  position: relative;
+  float: right;
+}
+.list-3 {
+  width: 400px;
+  height: 300px;
+  position: relative;  
+  float: left; 
+}
+.list-4 {
+  width: 400px;
+  height: 300px;
+  position: relative;
+  float: right;
+}
+
+.square {
+  width: 400px;
+  height: 150px;
+  float: right;
+  top: 50px;
+  text-indent:2em;
+}
+.square-bg{
+  background-color: #ffffff;
+  border-radius: 10px;
+  opacity: .4;
+  width: 400px;
+  height: 150px;
+  z-index:0;
+}
+.square p{
+  padding:0 10;
   position: absolute;
-  left: 546px;
-  top: 314px;
-  width: 474px;
-  height: 141px;
-  z-index: 6;
+  float: left;
+  z-index: 1;
+}
+.buttom{
+  background-color: rgb(86, 196, 246);
 }
 
 
