@@ -6,7 +6,6 @@
 <title>Web前端设计</title>
 <link rel="stylesheet" href="css/jquery.fullPage.css" />
 <link rel="stylesheet" href="css/style.css" />
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 
 <body>
@@ -20,6 +19,7 @@
 </div>
 <div id="fullpage"> 
         <div class="section section-1">
+        	  <div class="bg-1"></div>
         	  <div class="title1"><p><font color="#00a0e9" size="+6">个人简历</font></p></div>
               <div class="head">
                   <span class="head-1"></span> 
@@ -34,16 +34,14 @@
               </div>
         </div>
         <div class="section section-2 active">
+              <div class="bg-2"></div>
               <div class="title2"><p><font color="#00a0e9" size="+6">职业技能和作品展示</font></p></div>
-
                <div class="list-top">
-
 	              <div class="list-1">
 	              	  <p><font size="6px" color="#ffffff">HTML/CSS</font></p>
 	              	  <div class="frame">
 		              	  <div class="square">
-			              	  <p>自学Web前端设计,熟悉HTML、CSS，能够使用jquery设计各类网页<span class="buttom"></span></p>
-			              	  
+			              	  <p>自学Web前端设计,熟悉HTML、CSS，能够使用jquery设计各类网页<a class="buttom buttom-1" href="http://541196776.github.io/kobe/" target="_blank">作品展示</a></p>
 			              	  <div class="square-bg"></div>
 
 		              	  </div>
@@ -55,6 +53,7 @@
 	              	  <div class="frame">
 		              	  <div class="square">
 			              	  <p>多次为学校和部门制作活动海报，义务为同学设计宣传单、名片等，有一定的平面设计经验</p>
+			              	  <a class="buttom buttom-2" href="http://541196776.github.io/kobe/" target="_blank">作品展示</a>
 			              	  <div class="square-bg"></div>
 			              </div>
 	              	  </div>
@@ -66,6 +65,7 @@
 	              	  <div class="frame">
 		              	  <div class="square">
 			              	  <p>从小喜欢手绘，已经成为了一种娱乐，是我生活中不可缺少的一部分</p>
+			              	  <a class="buttom buttom-2" href="http://541196776.github.io/kobe/" target="_blank">作品展示</a>
 			              	  <div class="square-bg"></div>
 		              	  </div>
 	              	  </div>
@@ -76,6 +76,7 @@
 	              	  <div class="frame">
 		              	  <div class="square">
 			              	  <p>在校学生会担任负责人，写过多次策划书并策划和组织校内各种大小型活动</p>
+			              	  <a class="buttom buttom-2" href="http://541196776.github.io/kobe/" target="_blank">作品展示</a>
 			              	  <div class="square-bg"></div>
 			              </div>	  
 	              	  </div>
@@ -83,8 +84,8 @@
 
 	           </div>
         </div>
-        <div class="section section-3"></div>
-        <div class="section section-4"></div>
+        <div class="section section-3"><div class="bg-3"></div></div>
+        <div class="section section-4"><div class="bg-4"></div></div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
 <script src="js/move.min.js"></script>
@@ -99,17 +100,20 @@
 			afterLoad: function(Link, index){
             	switch(index){
 					case 1:
-						move('.title1').set('opacity', 0.8).duration(1000).end();
-						move('.text-1').scale(1.25).y(-140).duration(1000).end();
-						move('.text-2').scale(1.25).y(-140).duration(1250).end();
-						move('.text-3').scale(1.25).y(-140).duration(1500).end();
-						move('.text-4').scale(1.25).y(-140).duration(1750).end();
-						move('.text-5').scale(1.25).y(-140).duration(2000).end();
+						move('.title1').set('opacity', 0.8).duration(3000).end();
+						move('.text-1').y(-200).duration(1000).end();
+						move('.text-2').y(-200).duration(1250).end();
+						move('.text-3').y(-200).duration(1500).end();
+						move('.text-4').y(-200).duration(1750).end();
+						move('.text-5').y(-200).duration(2000).end();
 						move('.head-1').scale(1.5).duration(2000).end();
-						move('.head-2').scale(2.0).duration(2000).end();
+						move('.head-2').scale(2).duration(2000).end();
+						move('.bg-1').scale(2).duration(60000).end();
 					break;
 					case　2:
-					    move('.title2').set('opacity', 0.8).duration(1000).end();
+					    move('.title2').set('opacity', 0.8).duration(3000).end();
+					    move('.list-top').x(1366).duration(1000).end();
+					    move('.list-bottom').x(-1366).duration(1000).end();
 					break;
 				}
 					},
@@ -117,13 +121,19 @@
             	switch(index){
 					case 1:
 						move('.title1').set('opacity', 0).end();
-						move('.text-1').y(200).end();
-						move('.text-2').y(200).end();
-						move('.text-3').y(200).end();
-						move('.text-4').y(200).end();
-						move('.text-5').y(200).end();
-						move('.head-1').scale(1).end();
-						move('.head-2').scale(1).end();
+						move('.text-1').y(200).duration(0).end();
+						move('.text-2').y(200).duration(0).end();
+						move('.text-3').y(200).duration(0).end();
+						move('.text-4').y(200).duration(0).end();
+						move('.text-5').y(200).duration(0).end();
+						move('.head-1').scale(1).duration(0).end();
+						move('.head-2').scale(1).duration(0).end();
+						move('.bg-1').scale(1).duration(0).end();
+						break;
+					case 2:
+						move('.title2').set('opacity', 0).duration(0).end();
+					    move('.list-top').x(-1366).duration(0).end();
+					    move('.list-bottom').x(1366).duration(0).end();
 						break;
 					}
       	  	}

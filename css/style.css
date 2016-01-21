@@ -27,7 +27,7 @@ body{
 	text-decoration: none;
 }
 .title1{
-    position: absolute;
+  position: absolute;
 	top:20px;
 	left:50px;
 	opacity:0;
@@ -42,8 +42,13 @@ body{
 .section{
 	overflow:hidden;
 }
-.section-1{
-	background-image:url(../background/page-1.jpg);
+.bg-1{
+  background-image: url(../background/page-1.jpg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  top: 0px;
 }
 .text{
   font-size: 20px;
@@ -93,27 +98,44 @@ body{
   
 }
 
-.section-2{
-  background-image:url(../background/page-1.jpg);
+.bg-2{
+  background-image: url(../background/page-1.jpg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  top: 0px;
 }
-.section-3{
-	background-color:#0AFF00;
+.bg-3{
+  background-image: url(../background/page-1.jpg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  top: 0px;
 }
-.section-4{
-	background-color:#0015FF;
+.bg-4{
+  background-image: url(../background/page-1.jpg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  top: 0px;
 }
 .list-top {
   position: relative;
   margin-right: auto;
   margin-left: auto; 
   top: 50px;
+  left: -1366px;
   width: 900px;
   padding: 50px;
 }
 .list-bottom{
   position: relative;
   margin-right: auto;
-  margin-left: auto; 
+  margin-left: auto;
+  left: 1366px; 
   width: 900px;
   padding: 50px;
 }
@@ -151,22 +173,47 @@ body{
   text-indent:2em;
 }
 .square-bg{
-  background-color: #ffffff;
+  background-color: #000;
   border-radius: 10px;
-  opacity: .4;
+  opacity: .7;
   width: 400px;
   height: 150px;
   z-index:0;
 }
 .square p{
-  padding:0 10;
+  padding-left:10px;
+  padding-right: 10px;
   position: absolute;
   float: left;
   z-index: 1;
+  color: #fff;
 }
 .buttom{
-  background-color: rgb(86, 196, 246);
+  position: absolute;
+  width: 150px;
+  height: 40px;
+  z-index: 99;
+  padding-top:20px;
+  padding-left: 20px;
+  border:1px solid #00A0E9;
+  text-decoration:none;
+  left: 120px;
+  color: #00A0E9;
+  border-radius: 50px;
+  
 }
-
-
+.buttom:hover{
+  background-color: #fff;
+  border:1px solid #fff;
+  color: #00A0E9;
+}
+.buttom-1{
+  position: absolute;
+  margin-top: 35px;
+}
+.buttom-2{
+  position: absolute;
+  margin-top: 73px;
+  left: 120px;
+}
 
