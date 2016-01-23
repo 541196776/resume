@@ -39,6 +39,12 @@ body{
 	left:50px;
 	opacity:0;
 }
+.title3{
+    position: absolute;
+  top:20px;
+  left:50px;
+  opacity:0;
+}
 .section{
 	overflow:hidden;
 }
@@ -59,6 +65,7 @@ body{
   margin-left:auto;
   margin-right:auto;
   margin-top: 250px;
+  ,margin: 250px auto 0;
   z-index: 10;
 }
 .text p{
@@ -70,32 +77,23 @@ body{
 .head{
   position:relative;
   width:200px;
-  margin-left:auto;
-  margin-right:auto;
-  margin-top: 5px;
+  margin: 5px auto 0;
 }
-
-.head-1{
+.hd {
   border-radius: 50%;
-  background-color: rgb(46, 180, 240);
   opacity: 0.5;
   position: absolute;
   width: 100px;
   height: 100px;
   top:50px;
   left:50px;
+}
+.head-1{
+  background-color: rgb(46, 180, 240);
 }
 
 .head-2 {
-  border-radius: 50%;
   background-color: rgb(86, 196, 246);
-  opacity: 0.5;
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  top:50px;
-  left:50px;
-  
 }
 
 .bg-2{
@@ -122,49 +120,32 @@ body{
   z-index: 0;
   top: 0px;
 }
-.list-top {
+.list-top,.list-bottom{
   position: relative;
   margin-right: auto;
   margin-left: auto; 
+  padding: 50px;
+  width: 900px;
+}
+.list-top {
   top: 50px;
   left: -1366px;
-  width: 900px;
-  padding: 50px;
 }
 .list-bottom{
-  position: relative;
-  margin-right: auto;
-  margin-left: auto;
   left: 1366px; 
-  width: 900px;
-  padding: 50px;
 }
-
-.list-1 {
+.list-1,.list-3 {
   width: 400px;
   height: 300px;
   position: relative;   
   float: left;
 }
-.list-2 {
+.list-2,.list-4 {
   width: 400px;
   height: 300px;
   position: relative;
   float: right;
 }
-.list-3 {
-  width: 400px;
-  height: 300px;
-  position: relative;  
-  float: left; 
-}
-.list-4 {
-  width: 400px;
-  height: 300px;
-  position: relative;
-  float: right;
-}
-
 .square {
   width: 400px;
   height: 150px;
@@ -193,8 +174,7 @@ body{
   width: 150px;
   height: 40px;
   z-index: 99;
-  padding-top:20px;
-  padding-left: 20px;
+  padding:20px 0 0 20px;
   border:1px solid #00A0E9;
   text-decoration:none;
   left: 120px;
@@ -215,5 +195,128 @@ body{
   position: absolute;
   margin-top: 73px;
   left: 120px;
+}
+
+.line {
+  background-image: -moz-linear-gradient( 0deg, rgb(255,255,255) 0%, rgb(0,160,233) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(255,255,255) 0%, rgb(0,160,233) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(255,255,255) 0%, rgb(0,160,233) 100%);
+  position: absolute;
+  top: 328px;
+  left: 222px;
+  width: 1px;
+  height: 7px;
+}
+.t1,.t2 {
+  width: 122px;
+  height: 45px;
+  border-radius: 10px;
+  top: 310px;
+  position: absolute;
+  opacity: 0;
+}
+.t1 {
+  background-color: rgb(255, 255, 255);
+  left: 100px;
+}
+
+.t2 {
+  background-color: rgb(0, 160, 233);
+  left: 1100px;
+}
+.t1 p,.t2 p{
+  text-align: center;
+  font-size: 30px;
+  margin:2px;
+}
+.t1 p{
+  color: #00A0E9;
+
+}
+.t2 p{
+  color: #fff;
+}
+.c1,.c2,.c3,.c4,.c5{
+  border-radius: 50%;
+  position: absolute;
+  top: 330px;
+  width: 2px;
+  height: 2px;
+  opacity: 0;
+}
+.c1 {
+  background-color: rgb(255, 255, 255);
+  left: 300px;
+}
+.c2 {
+  background-color: rgb(191, 232, 249);
+  left: 465px;
+}
+.c3 {
+  background-color: rgb(151, 216, 246);
+  left: 613px;
+}
+.c4 {
+  background-color: rgb(105, 199, 242);
+  left: 770px;
+}
+
+.c5 {
+  background-color: rgb(60, 182, 238);
+  left: 940px;
+}
+
+.v1,.v2,.v3,.v4,.v5{
+  width: 255px;
+  height: 245px;
+  position: absolute;
+  background-repeat: no-repeat;
+  opacity: 0;
+}
+.v1,.v3,.v5{
+  background-image: url(../s3/v1.png);
+  top: 80px;
+}
+.v2,.v4{
+  background-image: url(../s3/v2.png);
+  top: 370px;
+}
+.v1 p,.v2 p,.v3 p,.v4 p,.v5 p{
+  color: #000;
+  position: absolute;
+  line-height:2;  
+}
+.v1 p,.v3 p{
+  margin:20px 20px 0;
+}
+.v2 p{
+  margin:40px 20px 0;
+}
+.v5 p{
+  margin:10px 20px 0;
+  line-height: 1.7 !important;
+}
+.v4 p{
+  margin: 50px 20px 0;
+}
+.v1{
+  left: 260px;
+}
+.v2{
+  left: 425px;
+}
+.v3{
+  left: 573px;
+}
+.v4{
+  left: 730px;
+}
+.v5{
+  left: 900px;
+}
+.test{
+  top:80px;
+  position: absolute;
+  left:80px;
 }
 
