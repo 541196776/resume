@@ -146,7 +146,6 @@
 					break;
 					case  3:
 					 	move('.title3').set('opacity', 0.8).duration(3000).end();
-					 	move('.test').scale(0.9).duration(0).end();
 					 	move('.c1').scale(20).set('opacity', 1).delay(500).duration(1000).end();
 					 	move('.c2').scale(20).set('opacity', 1).delay(1000).duration(1000).end();
 					 	move('.c3').scale(20).set('opacity', 1).delay(1500).duration(1000).end();
@@ -155,8 +154,11 @@
 					 	move('.t1').set('opacity', 1).duration(1000).end();
 					 	move('.t2').set('opacity', 1).delay(3000).duration(1000).end();
 					 	move('.line').add('width', 878).duration(3000).end();
-					 	move('.v1').y(-30).set('opacity', 1).delay(1000).duration(500).then().y(10).delay(0).duration(500).pop().end();
-
+					 	move('.v1').y(-30).set('opacity', .8).delay(1000).duration(500).end();
+					 	move('.v2').y(10).set('opacity', .8).delay(1500).duration(500).end();
+					 	move('.v3').y(-30).set('opacity', .8).delay(2000).duration(500).end();
+					 	move('.v4').y(10).set('opacity', .8).delay(2500).duration(500).end();
+					 	move('.v5').y(-30).set('opacity', .8).delay(3000).duration(500).end();
 					break;
 				}
 					},
@@ -181,6 +183,19 @@
 						break;
 					case  3:
 					 	move('.title3').set('opacity', 0).duration(0).end();
+					 	move('.c1').scale(1).set('opacity', 0).duration(0).end();
+					 	move('.c2').scale(1).set('opacity', 0).duration(0).end();
+					 	move('.c3').scale(1).set('opacity', 0).duration(0).end();
+					 	move('.c4').scale(1).set('opacity', 0).duration(0).end();
+					 	move('.c5').scale(1).set('opacity', 0).duration(0).end();
+					 	move('.t1').set('opacity', 0).duration(0).end();
+					 	move('.t2').set('opacity', 0).duration(0).end();
+					 	move('.line').sub('width', 878).duration(0).end();
+					 	move('.v1').y(-60).set('opacity', 0).duration(0).end();
+					 	move('.v2').y(40).set('opacity', 0).duration(0).end();
+					 	move('.v3').y(-60).set('opacity', 0).duration(0).end();
+					 	move('.v4').y(40).set('opacity', 0).duration(0).end();
+					 	move('.v5').y(-60).set('opacity', 0).duration(0).end();
 					break;
 					}
       	  	}
