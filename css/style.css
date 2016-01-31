@@ -2,6 +2,7 @@ body{
 	margin:0px;
 	padding:0px;
   font-family:"Microsoft YaHei";
+  overflow: hidden;
 }
 .menu{
 	float:right;
@@ -91,6 +92,39 @@ body{
 }
 .head-1{
   background-color: rgb(46, 180, 240);
+  animation:h-ani 2s infinite;
+  -moz-animation:h-ani 2s infinite;
+  -webkit-animation:h-ani 2s infinite;
+  -o-animation:h-ani 2s infinite;
+}
+
+@keyframes h-ani
+{
+  from, to { transform: none; }
+50% { 
+  transform: scale(1.4); 
+}
+}
+@-moz-keyframes h-ani
+{
+  from, to { transform: none; }
+50% { 
+  -moz-transform: scale(1.4); 
+}
+}
+@-webkit-keyframes h-ani
+{
+  from, to { transform: none; }
+50% { 
+  -webkit-transform: scale(1.4); 
+}
+}
+@-o-keyframes h-ani
+{
+  from, to { transform: none; }
+50% { 
+  -o-transform: scale(1.4); 
+}
 }
 
 .head-2 {
@@ -176,7 +210,6 @@ body{
   height: 40px;
   z-index: 99;
   padding:20px 0 0 20px;
-  border:1px solid #00A0E9;
   text-decoration:none;
   left: 120px;
   color: #00A0E9;
@@ -185,10 +218,32 @@ body{
   
 }
 .buttom:hover{
-  background-color: #fff;
-  border:1px solid #fff;
-  color: #00A0E9;
+  animation:buttom 1s;
+  -moz-animation:buttom 1s;
+  -webkit-animation:buttom 1s;
+  -o-animation:buttom 1s;
 }
+
+@keyframes buttom
+{
+to {background: #fff;}
+}
+
+@-moz-keyframes buttom
+{
+to {background: #fff;}
+}
+
+@-webkit-keyframes buttom
+{
+to {background: #fff;}
+}
+
+@-o-keyframes buttom
+{
+to {background: #fff;}
+}
+
 .buttom-1{
   position: absolute;
   margin-top: 35px;
@@ -200,7 +255,7 @@ body{
 }
 
 .sq{
-  width: 80%;
+  width: 70%;
   height:40%;
   position: relative;
   margin-left: auto;
@@ -209,11 +264,9 @@ body{
 }
 .sq-top{
   top:0px;
-  box-shadow: 1px 1px 25px 10px ;
 }
 .sq-bottom{
   bottom:0px;
-  box-shadow: 1px 10px 25px 10px;
 }
 
 .sq-w{
@@ -250,19 +303,78 @@ body{
   text-align: center;
   letter-spacing:0.5em;
 }
-#sq1:hover{ 
- -moz-transform:scale(2); 
- -webkit-transform:scale(2); 
- -o-transform:scale(2); 
+
+.sq-w:hover {
+  animation:sq-X .5s ease-out;
+  -moz-animation:sq-X .5s ease-out;
+  -webkit-animation:sq-X .5s ease-out;
 }
-.line {
-  background-image: -moz-linear-gradient( 0deg, rgb(0,0,0) 0%, rgb(0,160,233) 100%);
-  background-image: -webkit-linear-gradient( 0deg, rgb(0,0,0) 0%, rgb(0,160,233) 100%);
-  background-image: -ms-linear-gradient( 0deg, rgb(0,0,0) 0%, rgb(0,160,233) 100%);
-  position: relative;
-  width: 1366px;
-  height: 3px;
-  z-index: 99;
+
+@keyframes sq-X
+{
+30%  {
+  transform: rotateX(180deg);
 }
+60% {
+  transform: rotateX(180deg);
+}
+}
+
+@-moz-keyframes sq-X
+{
+30%  {
+  -moz-transform: rotateX(180deg);
+}
+60% {
+  -moz-transform: rotateX(180deg);
+}
+}
+
+@-webkit-keyframes sq-X
+{
+30%  {
+  -webkit-transform: rotateX(180deg);
+}
+60% {
+  -webkit-transform: rotateX(180deg);
+}
+}
+
+.sq-b:hover {
+  animation:sq-Y 1s ease-out;
+  -moz-animation:sq-Y 1s ease-out;
+  -webkit-animation:sq-Y 1s ease-out;
+}
+
+@keyframes sq-Y
+{
+30%  {
+  transform: rotateY(180deg);
+}
+60% {
+  transform: rotateY(180deg);
+}
+}
+
+@-moz-keyframes sq-Y
+{
+30%  {
+  -moz-transform: rotateY(180deg);
+}
+60% {
+  -moz-transform: rotateY(180deg);
+}
+}
+
+@-webkit-keyframes sq-Y
+{
+30%  {
+  -webkit-transform: rotateY(180deg);
+}
+60% {
+  -webkit-transform: rotateY(180deg);
+}
+}
+
 
 
