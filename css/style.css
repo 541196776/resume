@@ -242,7 +242,7 @@ to {background: #fff;}
   left: 120px;
 }
 
-.sq{
+.sq {
   width: 70%;
   height:40%;
   position: relative;
@@ -250,14 +250,14 @@ to {background: #fff;}
   margin-right: auto;
   overflow: auto;
 }
-.sq-top{
+.sq-top {
   top:0px;
 }
-.sq-bottom{
+.sq-bottom {
   bottom:0px;
 }
 
-.sq-w{
+.sq-w {
   width: 33.3%;
   height: 100%;
   position: relative;
@@ -267,7 +267,7 @@ to {background: #fff;}
   opacity: 0;
 }
 
-.sq-b{
+.sq-b {
   width: 33.3%;
   height: 100%;
   position: relative;
@@ -276,13 +276,13 @@ to {background: #fff;}
   float: left;
   opacity: 0;
 }
-.sq-w p,.sq-b p{
+.sq-w p,.sq-b p {
   margin:0px 20px;
   line-height: 2;
   word-wrap:break-word;
   font-size: 1em;
 }
-.sq-w h2,.sq-b h2{
+.sq-w h2,.sq-b h2 {
   margin:10% 0% 0% 5%;
 }
 .sq-top .sq-b p{
@@ -298,23 +298,20 @@ to {background: #fff;}
   -webkit-animation:sq-y .5s ease-out forwards;
 }
 
-@keyframes sq-y
-{
+@keyframes sq-y {
 from,to { transform: rotateY(0deg); background-color: rgba(46, 180, 240,0.6); }
 50%     { transform: rotateY(180deg); background-color: rgba(46, 180, 240,0.6);}
 }
-@-moz-keyframes sq-X
-{
+@-moz-keyframes sq-X {
 from,to { transform: rotateY(0deg); background-color: rgba(46, 180, 240,0.6);}
 50%     { -moz-transform: rotateY(180deg); background-color: rgba(46, 180, 240,0.6);}
 }
-@-webkit-keyframes sq-y
-{
+@-webkit-keyframes sq-y {
 from,to { transform: rotateY(0deg); background-color: rgba(46, 180, 240,0.6);}
 50%     { -webkit-transform: rotateY(180deg); background-color: rgba(46, 180, 240,0.6);}
 }
 
-.contact{
+.contact {
   width: 20%;
   height: 50%;
   background-color: rgba(0, 0, 0,0.8);
@@ -323,13 +320,13 @@ from,to { transform: rotateY(0deg); background-color: rgba(46, 180, 240,0.6);}
   box-shadow: 1px 1px 15px 2px rgb(46, 180, 240);
   float: left;
 }
-.ct-1{
+.ct-1 {
 margin:0 1% 0 5%;
 }
-.ct-2,.ct-3,.ct-4{
+.ct-2,.ct-3,.ct-4 {
   margin:0 1%;
 }
-.contact img{
+.contact img {
   width: 40%;
   height: auto;
   margin: 20% 30% 5%;
@@ -338,7 +335,8 @@ margin:0 1% 0 5%;
   -webkit-animation:h-ani 10s infinite;
   -o-animation:h-ani 10s infinite;
 }
-.contact > h1,p{
+.contact h1,
+.contact p {
   text-align: center;
   color: white; 
   font-size: 1.5em;
