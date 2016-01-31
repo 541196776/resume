@@ -20,7 +20,7 @@
 <div id="fullpage"> 
         <div class="section section-1">
         	  <div class="bg-1"></div>
-        	  <div class="title1"><p><font color="#00a0e9" size="+6">个人简历</font></p></div>
+        	  <div class="title title1"><p><font color="#00a0e9" size="+6">个人简历</font></p></div>
               <div class="head">
                   <span class="hd head-1"></span> 
                   <span class="hd head-2"></span>
@@ -35,7 +35,7 @@
         </div>
         <div class="section section-2">
             <div class="bg-2"></div>
-            <div class="title2"><p><font color="#00a0e9" size="+6">职业技能和作品展示</font></p></div>
+            <div class="title title2"><p><font color="#00a0e9" size="+6">职业技能和作品展示</font></p></div>
             <div class="list-top">
 	            <div class="list-1">
 	              	<h1><font color="#ffffff">HTML/CSS</font></h1>
@@ -85,7 +85,7 @@
         </div>
         <div class="section section-3 active">
         	<div class="bg-3"></div>
-        	<div class="title3"><p><font color="#00a0e9" size="+6">实践经历</font></p></div>
+        	<div class="title title3"><p><font color="#00a0e9" size="+6">实践经历</font></p></div>
 
         	<div class="sq sq-top">
 				<div id="sq1" class="sq-w "><h2>2013-2014</h2><p>周末于苏宁促销员、寒暑假在麦当劳兼职，开学一周在校内为中国移动当临时促销员。具备良好的沟通能力、团队协作精神、敬业精神。</p></div>
@@ -100,13 +100,12 @@
 
         </div>
         <div class="section section-4">
+        <div class="title title4"><p><font color="#00a0e9" size="+6">联系方式</font></p></div>
         	<div class="bg-4"></div>
-        	<div class="contact">
-	        	<div class="contact-1"></div>
-	        	<div class="contact-2"></div>
-				<div class="contact-3"></div>
-	        	<div class="contact-4"></div>
-        	</div>
+	        	<div class="contact ct-1"><img src="contact/phone.png"/><h1>手机</h1><p>15013726670</p></div>
+	        	<div class="contact ct-2"><img src="contact/qq.png"/><h1>QQ</h1><p>541196776</p></div>
+				<div class="contact ct-3"><img src="contact/wechat.png"/><h1>微信</h1><p>CV15013726670</p></div>
+	        	<div class="contact ct-4"><img src="contact/mail.png"/><h1>邮箱（推荐）</h1><p>541196776@qq.com</p></div>
         </div>
 </div>
 
@@ -148,6 +147,9 @@
 					 	move('#sq6').scale(0.5).duration(0).then().scale(2).set('opacity', 1).duration(1500).delay(1000).pop().end();
 					 	move('.bg-3').scale(2).duration(60000).end();
 					break;
+					case 4:
+						move('.title4').set('opacity', 0.8).duration(3000).end();
+					break;
 				}
 					},
 			onLeave: function(Link, index){
@@ -178,6 +180,9 @@
 					 	move('#sq5').scale(0.5).duration(0).set('opacity', 0).delay(0).end();
 					 	move('#sq6').scale(0.5).duration(0).set('opacity', 0).delay(0).end();
 					 	move('.bg-3').scale(1).duration(0).end();
+					break;
+					case 4:
+						move('.title4').set('opacity', 0).duration(0).end();
 					break;
 					}
       	  	}
