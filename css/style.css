@@ -4,29 +4,28 @@ body{
   font-family:"Microsoft YaHei";
   overflow: hidden;
 }
-.menu{
-	float:right;
-	width:350px;
-	margin-right:10px;
-	
-}
 #myMenu{
-	margin-top:0px;
-	position: fixed;
+  width: 400px;
+	position: relative;
 	z-index:99;
-	width:100%;
-	opacity:0.8;
-	padding-top:10px;
+  margin: 0 auto;
 }
 #myMenu li{
 	float: left;
-	margin-right: 20px;
+	margin:10px 20px 0 0;
 	list-style: none;
+  padding:2px 7px;
+  border-radius: 5px;
 }
-#myMenu a{
+#myMenu li a{
+  display: block;
 	color: #00A0E9;
 	text-decoration: none;
 }
+.cur {
+  background-color: white;
+}
+
 .title{
   position: absolute;
 	top:20px;
@@ -313,11 +312,9 @@ from,to { transform: rotateY(0deg); background-color: rgba(46, 180, 240,0.6);}
 
 .contact {
   width: 20%;
-  height: 50%;
-  background-color: rgba(0, 0, 0,0.8);
-  border-radius: 20px;
+  height: 30%;
+  background-color: rgba(0, 0, 0,0.6);
   position: relative;
-  box-shadow: 1px 1px 15px 2px rgb(46, 180, 240);
   float: left;
 }
 .ct-1 {
@@ -327,17 +324,16 @@ margin:0 1% 0 5%;
   margin:0 1%;
 }
 .contact img {
-  width: 40%;
+  width: 20%;
   height: auto;
-  margin: 20% 30% 5%;
-  animation:h-ani 10s infinite;
-  -moz-animation:h-ani 10s infinite;
-  -webkit-animation:h-ani 10s infinite;
-  -o-animation:h-ani 10s infinite;
+  margin: 10% 40% 5%;
 }
 .contact h1,
 .contact p {
   text-align: center;
   color: white; 
-  font-size: 1.5em;
+  font-size: 1.2em;
+}
+.section-4 > p{
+  color:#fff; 
 }

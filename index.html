@@ -9,18 +9,15 @@
 </head>
 
 <body>
-<div class="menu">
 <ul id="myMenu">
-    <li data-menuanchor="page1" class="active"><a href="#page1">介绍</a></li>
-    <li data-menuanchor="page2"><a href="#page2">职能与作品</a></li>
-    <li data-menuanchor="page3"><a href="#page3">实践经历</a></li>
-    <li data-menuanchor="page4"><a href="#page4">联系我</a></li>
+    <li id="p1" data-menuanchor="page1" class="cur"><a href="#page1">自我介绍</a></li>
+    <li id="p2" data-menuanchor="page2"><a href="#page2">技能作品</a></li>
+    <li id="p3" data-menuanchor="page3"><a href="#page3">实践经历</a></li>
+    <li id="p4" data-menuanchor="page4"><a href="#page4">请联系我</a></li>
 </ul>
-</div>
 <div id="fullpage"> 
-        <div class="section section-1">
+        <div class="section">
         	  <div class="bg-1"></div>
-        	  <div class="title title1"><p><font color="#00a0e9" size="+6">个人简历</font></p></div>
               <div class="head">
                   <span class="hd head-1"></span> 
                   <span class="hd head-2"></span>
@@ -33,9 +30,8 @@
                   <p class="text-5">并希望能够从事<font size="6px" color="#00a0e9">Web前端设计工程师</font>的相关职位。</p>
               </div>
         </div>
-        <div class="section section-2">
+        <div class="section">
             <div class="bg-2"></div>
-            <div class="title title2"><p><font color="#00a0e9" size="+6">职业技能和作品展示</font></p></div>
             <div class="list-top">
 	            <div class="list-1">
 	              	<h1><font color="#ffffff">HTML/CSS</font></h1>
@@ -83,10 +79,8 @@
 	                </div>
 	            </div>
         </div>
-        <div class="section section-3 active">
+        <div class="section active">
         	<div class="bg-3"></div>
-        	<div class="title title3"><p><font color="#00a0e9" size="+6">实践经历</font></p></div>
-
         	<div class="sq sq-top">
 				<div id="sq1" class="sq-w "><h2>2013-2014</h2><p>周末于苏宁促销员、寒暑假在麦当劳兼职，开学一周在校内为中国移动当临时促销员。具备良好的沟通能力、团队协作精神、敬业精神。</p></div>
 				<div id="sq2" class="sq-b"><P>I love<br>WEB</br></p></div>
@@ -97,15 +91,14 @@
 				<div id="sq5" class="sq-w"><h2>2014-2015</h2><p>在校担任校学生会部门负责人，编写修改活动策划书，力争让活动更加创新、有吸引力。指导新干事举办活动，对活动进行管理和任务分配。</p></div>
 				<div id="sq6" class="sq-b"><h2>2015-2016</h2><p>实习期，上班时间根据辅导员布置的任务，通过对PHP的网上自学，实现了微信公众号各种功能。利用空余时间学习研究HTML、CSS、JavaScript等Web前端技术，制作了多个前端网页。</p></div>
 			</div>
-
         </div>
-        <div class="section section-4">
-        <div class="title title4"><p><font color="#00a0e9" size="+6">联系方式</font></p></div>
+        <div class="section">
         	<div class="bg-4"></div>
-	        	<div class="contact ct-1"><img src="contact/phone.png"/><h1>手机</h1><p>15013726670</p></div>
-	        	<div class="contact ct-2"><img src="contact/qq.png"/><h1>QQ</h1><p>541196776</p></div>
-				<div class="contact ct-3"><img src="contact/wechat.png"/><h1>微信</h1><p>CV15013726670</p></div>
-	        	<div class="contact ct-4"><img src="contact/mail.png"/><h1>邮箱（推荐）</h1><p>541196776@qq.com</p></div>
+        	<p>Contact Me!</p>
+        	<div class="contact ct-1"><img src="contact/phone.png"/><h1>手机</h1><p>15013726670</p></div>
+        	<div class="contact ct-2"><img src="contact/qq.png"/><h1>QQ</h1><p>541196776</p></div>
+			<div class="contact ct-3"><img src="contact/wechat.png"/><h1>微信</h1><p>CV15013726670</p></div>
+        	<div class="contact c t-4"><img src="contact/mail.png"/><h1>邮箱（推荐）</h1><p>541196776@qq.com</p></div>
         </div>
 </div>
 
@@ -119,10 +112,10 @@
 			navigation:true,
 		    menu: '#myMenu',
 			loopbottom:true,
-			afterLoad: function(Link, index){
+			afterLoad: function(anchorLink, index){
             	switch(index){
 					case 1:
-						move('.title1').set('opacity', 0.8).duration(3000).end();
+					    $('#myMenu #p1').addClass('cur').siblings().removeClass('cur');
 						move('.text-1').y(-200).duration(1000).end();
 						move('.text-2').y(-200).duration(1250).end();
 						move('.text-3').y(-200).duration(1500).end();
@@ -132,13 +125,13 @@
 						move('.bg-1').scale(2).duration(60000).end();
 					break;
 					case　2:
-					    move('.title2').set('opacity', 0.8).duration(3000).end();
+					    $('#myMenu #p2').addClass('cur').siblings().removeClass('cur');
 					    move('.list-top').x(1366).duration(1000).end();
 					    move('.list-bottom').x(-1366).duration(1000).end();
 					    move('.bg-2').scale(2).duration(60000).end();
 					break;
 					case  3:
-					 	move('.title3').set('opacity', 0.8).duration(3000).end();
+						$('#myMenu #p3').addClass('cur').siblings().removeClass('cur');
 					 	move('#sq1').scale(0.5).duration(0).then().scale(2).set('opacity', 1).duration(1500).pop().end();
 					 	move('#sq2').scale(0.5).duration(0).then().scale(2).set('opacity', 1).duration(1500).delay(500).pop().end();
 					 	move('#sq3').scale(0.5).duration(0).then().scale(2).set('opacity', 1).duration(1500).delay(750).pop().end();
@@ -148,14 +141,13 @@
 					 	move('.bg-3').scale(2).duration(60000).end();
 					break;
 					case 4:
-						move('.title4').set('opacity', 0.8).duration(3000).end();
+						$('#myMenu #p4').addClass('cur').siblings().removeClass('cur');
 					break;
 				}
 					},
-			onLeave: function(Link, index){
+			onLeave: function(anchorLinkLink, index){
             	switch(index){
 					case 1:
-						move('.title1').set('opacity', 0).end();
 						move('.text-1').y(200).duration(0).end();
 						move('.text-2').y(200).duration(0).end();
 						move('.text-3').y(200).duration(0).end();
@@ -166,13 +158,11 @@
 						move('.bg-1').scale(1).duration(0).end();
 						break;
 					case 2:
-						move('.title2').set('opacity', 0).duration(0).end();
 					    move('.list-top').x(-1366).duration(0).end();
 					    move('.list-bottom').x(1366).duration(0).end();
 					    move('.bg-2').scale(1).duration(0).end();
 						break;
 					case  3:
-						move('.title3').set('opacity', 0).duration(0).end();
 						move('#sq1').scale(0.5).duration(0).set('opacity', 0).delay(0).end();
 						move('#sq2').scale(0.5).duration(0).set('opacity', 0).delay(0).end();
 					 	move('#sq3').scale(0.5).duration(0).set('opacity', 0).delay(0).end();
@@ -182,13 +172,11 @@
 					 	move('.bg-3').scale(1).duration(0).end();
 					break;
 					case 4:
-						move('.title4').set('opacity', 0).duration(0).end();
 					break;
 					}
       	  	}
 			});
     });
-
 
 </script>
 </body>
