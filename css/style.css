@@ -64,7 +64,10 @@ body{
 }
 @media only screen and (max-width: 768px) {
   .text{
-  font-size: 10px
+    font-size: 10px
+  }
+  .text p{
+    font-size:15px;
   }
 }
 .head{
