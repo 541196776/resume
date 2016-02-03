@@ -18,11 +18,11 @@ body{
   border-radius: 5px;
 }
 #myMenu li a{
-  display: block;
+  display: inline;
 	color: #00A0E9;
 	text-decoration: none;
 }
-.cur {
+#myMenu li:hover ,.cur {
   background-color: white;
 }
 
@@ -54,14 +54,18 @@ body{
   margin-left:auto;
   margin-right:auto;
   margin-top: 250px;
-  ,margin: 250px auto 0;
+  margin: 250px auto 0;
   z-index: 10;
 }
 .text p{
-	word-wrap:break-word;
 	position:relative;
-    top:200px;
-    opacity:1;
+  top:200px;
+  opacity:1;
+}
+@media only screen and (max-width: 768px) {
+  .text{
+  font-size: 10px
+  }
 }
 .head{
   position:relative;
@@ -247,7 +251,7 @@ to {background: #fff;}
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  overflow: auto;
+  overflow: hidden;
 }
 .sq-top {
   top:0px;
@@ -255,33 +259,33 @@ to {background: #fff;}
 .sq-bottom {
   bottom:0px;
 }
-
-.sq-w {
+.sqq{
   width: 33.3%;
   height: 100%;
   position: relative;
-  background-color: rgba(0,0,0,0.5);
   color: #fff;
   float: left;
   opacity: 0;
 }
-
-.sq-b {
-  width: 33.3%;
-  height: 100%;
-  position: relative;
-  background-color: rgba(255,255,255,0.5);
-  color: #000;
-  float: left;
-  opacity: 0;
+.sq-w {
+  background-color: rgba(0,0,0,0.8);
 }
-.sq-w p,.sq-b p {
+.sq-b {
+  background-color: rgba(255,255,255,0.8);
+  color: black;
+}
+.sqq p {
   margin:0px 20px;
   line-height: 2;
-  word-wrap:break-word;
   font-size: 1em;
 }
-.sq-w h2,.sq-b h2 {
+.sq-pic{
+  background-color: white;
+}
+.sq-pic img{
+  vertical-align: middle;
+}
+.sqq h2 {
   margin:10% 0% 0% 5%;
 }
 .sq-top .sq-b p{
@@ -291,7 +295,7 @@ to {background: #fff;}
   letter-spacing:0.5em;
 }
 
-.sq-w:hover,.sq-b:hover {
+/*.sq-w:hover,.sq-b:hover {
   animation:sq-y .5s ease-out forwards;
   -moz-animation:sq-y .5s ease-out forwards;
   -webkit-animation:sq-y .5s ease-out forwards;
@@ -309,7 +313,7 @@ from,to { transform: rotateY(0deg); background-color: rgba(46, 180, 240,0.6);}
 from,to { transform: rotateY(0deg); background-color: rgba(46, 180, 240,0.6);}
 50%     { -webkit-transform: rotateY(180deg); background-color: rgba(46, 180, 240,0.6);}
 }
-
+*/
 .contact {
   width: 20%;
   height: 30%;
