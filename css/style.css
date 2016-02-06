@@ -155,14 +155,15 @@ body{
 .square {
   display: inline;
   float: right;
-  text-indent:2em;
   border-top: 2px solid rgb(16,180,240);
+  text-indent:2em;
+  text-align: center;
 }
-
 .square p{
   padding:0 10px;
   color: #fff;
   font-size: 0.8em;
+  text-align: left;
 }
 .buttom{
   display: inline;
@@ -171,8 +172,7 @@ body{
   text-decoration:none;
   border: 1px solid rgb(16,180,240);
   padding: 2% 8%;
-  margin:0 auto;
-  
+  margin: 0 auto;
 }
 .buttom:hover{
   animation:buttom 1s forwards;
