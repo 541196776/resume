@@ -67,37 +67,39 @@
     <div class="section">
     	<div id="bg-3" class="bg"></div>
     	<div class="square">
-			<div id="sq1" class="sq-w ">
+			<div id="sq1">
 				<h2>兼职</h2>
-				<p>苏宁促销员、麦当劳兼职、校内中国移动当临时促销员。具备良好的沟通能力、团队协作精神、敬业精神。</p>
+				<p>苏宁、中国移动促销员，麦当劳兼职等等。吃苦耐劳，具备良好的沟通能力、团队协作精神、敬业精神。</p>
 			</div>
-			<div id="sq2" class="sq-pic">
+			<div id="sq2">
 			</div>
-			<div id="sq3" class="sq-w">
+			<div id="sq3">
 				<h2>设计</h2>
 				<p>制作校内活动海报，并且帮助同学制作创业海报、宣传单和名片。从实践中学习，巩固了对Photoshop认知。</p>
 			</div>
-			<div id="sq4" class="sq-b">
+			<div id="sq4">
 				<h2>策划与管理</h2>
 				<p>在校担任校学生会部门负责人，编写修改策划书，指导新干事举办活动，对活动进行管理和任务分配。</p>
 			</div>
-			<div id="sq5" class="sq-w">
+			<div id="sq5">
 				<h2>启蒙</h2>
 				<p>自主创业，讨论宣传方案，制作海报发布在微信朋友圈中，利用第三方平台HTML5宣传网页，奠定浓厚兴趣。</p>
 			</div>
-			<div id="sq6" class="sqq sq-b">
+			<div id="sq6">
 				<h2>进阶</h2>
-				<p>实习期根据辅导员布置的任务，通过对PHP的网上自学，实现了微信公众号各种功能。利用空余时间研究Web前端技术，制作了多个前端网页。</p>
+				<p>实习期根据辅导员布置的任务，通过PHP实现微信公众号各种功能。并利用空余时间研究Web前端技术。</p>
 			</div>
 		</div>
     </div>
     <div class="section">
     	<div id="bg-4" class="bg"></div>
     	<p class="cm">Contact Me!</p>
-    	<div class="contact ct-1"><img src="contact/phone.png" alt="phone"/><h1>手机</h1><p>15013726670</p></div>
-    	<div class="contact ct-2"><img src="contact/qq.png" alt="contact"/><h1>QQ</h1><p>541196776</p></div>
-		<div class="contact ct-3"><img src="contact/wechat.png" alt="wechat"/><h1>微信</h1><p>CV15013726670</p></div>
-    	<div class="contact c t-4"><img src="contact/mail.png" alt="mail"/><h1>邮箱</h1><p>541196776@qq.com</p></div>
+    	<div class="contact">
+	    	<div><img src="contact/phone.png" alt="phone"/><h1>手机</h1><p>15013726670</p></div>
+	    	<div><img src="contact/qq.png" alt="contact"/><h1>微信</h1><p>CV15013726670</p></div>
+			<div><img src="contact/wechat.png" alt="wechat"/><h1>QQ</h1><p>541196776</p></div>
+	    	<div><img src="contact/mail.png" alt="mail"/><h1>邮箱</h1><p>541196776@qq.com</p></div>
+    	</div>
     </div>
 </div>
 
@@ -139,6 +141,7 @@
 					break;
 					case 4:
 						$('#myMenu #p4').addClass('cur').siblings().removeClass('cur');
+						move('#bg-4').scale(2).duration(60000).end();
 					break;
 				}
 					},
