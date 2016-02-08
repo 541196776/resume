@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
-<title>Web前端设计</title>
+<title>程梓健的个人简历</title>
 <link rel="stylesheet" href="css/jquery.fullPage.css" />
 <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -34,28 +34,28 @@
     <div class="section">
         <div id="bg-2" class="bg"></div>
         <div class="list">
-            <div class="list-1">
+            <div id-"lt-1">
               	<h1>HTML/CSS</h1>
               	<a class="buttom" href="http://541196776.github.io/kobe/" target="_blank">作品展示</a>
 	            <div>
 		            <p>自学Web前端设计,熟悉HTML、CSS，能够使用jquery设计各类网页。</p>
               	</div>
             </div>
-            <div class="list-2">
+            <div id-"lt-2">
               	<h1>Photoshop</h1>
               	<a class="buttom" href="http://541196776.github.io/kobe/" target="_blank">作品展示</a>
               	<div>
 	              	<p>为部门、同学制作活动海报、设计宣传单、名片等，有一定的平面设计经验。</p>
 	            </div>
             </div>
-            <div class="list-3">
+            <div id-"lt-3">
               	<h1>手绘</h1>
 	            <a class="buttom" href="http://541196776.github.io/kobe/" target="_blank">作品展示</a>
 	            <div>
 		            <p>从小喜欢手绘，已经成为了一种娱乐，是我生活中不可缺少的一部分。</p>
 	            </div>
             </div>
-            <div class="list-4">
+            <div id-"lt-4">
               	<h1>文案</h1>
 	            <a class="buttom" href="http://541196776.github.io/kobe/" target="_blank">作品展示</a>
 	            <div>
@@ -127,6 +127,7 @@
 					break;
 					case　2:
 					    $('#myMenu #p2').addClass('cur').siblings().removeClass('cur');
+					    move('#lt-1').y(-200).duration(2000).end();
 					    move('#bg-2').scale(2).duration(60000).end();
 					break;
 					case  3:
