@@ -241,14 +241,14 @@ body{
   color: black;
 }
 .square > div p {
-  margin:0px 20px;
-  line-height: 2;
+  margin:0 5%;
+  line-height: 2em;
   font-size: 1em;
   text-indent:2em;
 }
 
 .square > div  h2 {
-  margin:10% 0% 0% 5%;
+  margin:10% 0 0 10%;
 }
 .contact {
   min-width: 20%;
@@ -307,7 +307,7 @@ body{
     font-size: 0.5em;
   }
   .list > div >div p{
-    font-size: 0.25em;
+    font-size: 0.5em;
     text-indent: 2em;
   }
   .list div a {
