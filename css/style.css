@@ -5,72 +5,6 @@ body{
   overflow: hidden;
   font-size: 20px;
 }
-@media (max-width: 767px) {
-  #myMenu{
-    width: 300px;
-  }
-  #myMenu li {
-  font-size: 0.5em;
-  margin:10px 10px 0 0;
-  }
-  .text p {
-  font-size: 0.6em;
-  }
-  .head,.head span {
-    width: 50px;
-    height: 50px;
-  }
-  .list{
-    min-width:0px; 
-    min-height: 0px;
-    height: 50%;
-  }
-  .list > div{
-    width: 90%;
-  }
-  .list > div h1 {
-    font-size: 0.5em;
-  }
-  .list > div >div p{
-    font-size: 0.5em;
-    text-indent: 2em;
-  }
-  .list div a {
-    top:50px;
-    left: 60%;
-    font-size: 0.5em;
-  }
-  .list > div:nth-child(odd){
-   margin:0 5%;
-  }
-  .list > div:nth-child(even){
-    margin:0 5%;
-  }
-  .square {
-    width: 90%;
-    height: 60%;
-  }
-  .square div {
-    font-size: 0.5em;
-  }
-  .square > div p {
-    line-height: 1.5em;
-  }
-  .contact img{
-    width: 30px;
-  }
-  .contact div{
-    width: 40%;
-    font-size: 0.5em;
-  }
-  .contact div:first-child,
-  .contact div:nth-child(3){
-    margin:0 0 0 10%;
-  }
-  .cm{
-    top: -5%;
-  }
-}
 .section{
   overflow:hidden;
 }
@@ -347,4 +281,70 @@ body{
   display: block;
   font-size: 3em;
   text-align: center;
+}
+@media (max-width: 767px) {
+  #myMenu{
+    width: 300px;
+  }
+  #myMenu li {
+  font-size: 0.5em;
+  margin:10px 10px 0 0;
+  }
+  .text p {
+  font-size: 0.6em;
+  }
+  .head,.head span {
+    width: 50px;
+    height: 50px;
+  }
+  .list{
+    min-width:0px; 
+    min-height: 0px;
+    height: 50%;
+  }
+  .list > div{
+    width: 90%;
+  }
+  .list > div h1 {
+    font-size: 0.5em;
+  }
+  .list > div >div p{
+    font-size: 0.5em;
+    text-indent: 2em;
+  }
+  .list div a {
+    top:50px;
+    left: 60%;
+    font-size: 0.5em;
+  }
+  .list > div:nth-child(odd){
+   margin:0 5%;
+  }
+  .list > div:nth-child(even){
+    margin:0 5%;
+  }
+  .square {
+    width: 90%;
+    height: 60%;
+  }
+  .square div {
+    font-size: 0.5em;
+  }
+  .square > div p {
+    line-height: 1.5em;
+  }
+  .contact img{
+    width: 30px;
+  }
+  .contact div{
+    width: 40%;
+    font-size: 0.5em;
+  }
+  .contact div:first-child,
+  .contact div:nth-child(3){
+    margin:0 0 0 10%;
+  }
+  .cm{
+    top: -5%;
+  }
 }
