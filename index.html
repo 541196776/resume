@@ -6,6 +6,15 @@
 <title>程梓健的个人简历</title>
 <link rel="stylesheet" href="css/jquery.fullPage.css" />
 <link rel="stylesheet" href="css/style.css" />
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?f05ff7bdbbda9eab9514c0a32ae62b65";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
 </head>
 
 <body>
@@ -34,30 +43,30 @@
     <div class="section">
         <div id="bg-2" class="bg"></div>
         <div class="list">
-            <div id-"lt-1">
+            <div id="p-1">
               	<h1>HTML/CSS</h1>
-              	<a class="buttom" href="http://541196776.github.io/kobe/" target="_blank">作品展示</a>
+              	<a  href="http://541196776.github.io/kobe/" target="_blank">作品展示</a>
 	            <div>
 		            <p>自学Web前端设计,熟悉HTML、CSS，能够使用jquery设计各类网页。</p>
               	</div>
             </div>
-            <div id-"lt-2">
+            <div id="p-2">
               	<h1>Photoshop</h1>
-              	<a class="buttom" href="http://541196776.github.io/kobe/" target="_blank">作品展示</a>
+              	<a href="http://541196776.github.io/kobe/" target="_blank">作品展示</a>
               	<div>
 	              	<p>为部门、同学制作活动海报、设计宣传单、名片等，有一定的平面设计经验。</p>
 	            </div>
             </div>
-            <div id-"lt-3">
+            <div id="p-3">
               	<h1>手绘</h1>
-	            <a class="buttom" href="http://541196776.github.io/kobe/" target="_blank">作品展示</a>
+	            <a href="http://541196776.github.io/kobe/" target="_blank">作品展示</a>
 	            <div>
 		            <p>从小喜欢手绘，已经成为了一种娱乐，是我生活中不可缺少的一部分。</p>
 	            </div>
             </div>
-            <div id-"lt-4">
+            <div id="p-4">
               	<h1>文案</h1>
-	            <a class="buttom" href="http://541196776.github.io/kobe/" target="_blank">作品展示</a>
+	            <a href="http://541196776.github.io/kobe/" target="_blank">作品展示</a>
 	            <div>
 		            <p>在校学生会担任负责人，写过多次策划书并策划和组织校内各种大小型活动。</p>
 		        </div>
@@ -106,76 +115,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
 <script src="js/move.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/jquery.fullPage.js"></script>
-<script>
-    $(document).ready(function(){
-    	$('#fullpage').fullpage({
-			anchors:['page1','page2','page3','page4'],
-			navigation:true,
-		    menu: '#myMenu',
-			loopbottom:true,
-			afterLoad: function(anchorLink, index){
-            	switch(index){
-					case 1:
-					    $('#myMenu #p1').addClass('cur').siblings().removeClass('cur');
-						move('.text-1').y(-200).duration(1000).end();
-						move('.text-2').y(-200).duration(1250).end();
-						move('.text-3').y(-200).duration(1500).end();
-						move('.text-4').y(-200).duration(1750).end();
-						move('.text-5').y(-200).duration(2000).end();
-						move('#head-2').scale(2).duration(2000).set('opacity', 0.5 ).then().set('opacity', 0).scale(3).duration(1000).delay(0).pop().end();
-						move('#bg-1').scale(2).duration(60000).end();
-					break;
-					case　2:
-					    $('#myMenu #p2').addClass('cur').siblings().removeClass('cur');
-					    move('#lt-1').y(-200).duration(2000).end();
-					    move('#bg-2').scale(2).duration(60000).end();
-					break;
-					case  3:
-						$('#myMenu #p3').addClass('cur').siblings().removeClass('cur');
-					 	move('#sq1').scale(0.5).duration(0).then().scale(2).set('opacity', 1).duration(1500).pop().end();
-					 	move('#sq2').scale(0.5).duration(0).then().scale(2).set('opacity', 1).duration(1500).delay(500).pop().end();
-					 	move('#sq3').scale(0.5).duration(0).then().scale(2).set('opacity', 1).duration(1500).delay(750).pop().end();
-					 	move('#sq4').scale(0.5).duration(0).then().scale(2).set('opacity', 1).duration(1500).delay(500).pop().end();
-					 	move('#sq5').scale(0.5).duration(0).then().scale(2).set('opacity', 1).duration(1500).delay(750).pop().end();
-					 	move('#sq6').scale(0.5).duration(0).then().scale(2).set('opacity', 1).duration(1500).delay(1000).pop().end();
-					 	move('#bg-3').scale(2).duration(60000).end();
-					break;
-					case 4:
-						$('#myMenu #p4').addClass('cur').siblings().removeClass('cur');
-						move('#bg-4').scale(2).duration(60000).end();
-					break;
-				}
-					},
-			onLeave: function(anchorLinkLink, index){
-            	switch(index){
-					case 1:
-						move('.text-1').y(200).duration(0).end();
-						move('.text-2').y(200).duration(0).end();
-						move('.text-3').y(200).duration(0).end();
-						move('.text-4').y(200).duration(0).end();
-						move('.text-5').y(200).duration(0).end();
-						move('#head-2').scale(1).duration(0).end();
-						move('#bg-1').scale(1).duration(0).end();
-						break;
-					case 2:
-					    move('#bg-2').scale(1).duration(0).end();
-						break;
-					case  3:
-						move('#sq1').scale(0.5).duration(0).set('opacity', 0).delay(0).end();
-						move('#sq2').scale(0.5).duration(0).set('opacity', 0).delay(0).end();
-					 	move('#sq3').scale(0.5).duration(0).set('opacity', 0).delay(0).end();
-					 	move('#sq4').scale(0.5).duration(0).set('opacity', 0).delay(0).end();
-					 	move('#sq5').scale(0.5).duration(0).set('opacity', 0).delay(0).end();
-					 	move('#sq6').scale(0.5).duration(0).set('opacity', 0).delay(0).end();
-					 	move('#bg-3').scale(1).duration(0).end();
-					break;
-					case 4:
-					break;
-					}
-      	  	}
-			});
-    });
-
-</script>
+<script src="js/animation.js"></script>
 </body>
 </html>

@@ -161,7 +161,7 @@ body{
 }
 .list > div > div {
   display: inline;
-  float: right;
+  float: left;
   border-top: 2px solid rgb(16,180,240);
   text-indent:1.6em;
   margin-top: -30px;
@@ -172,7 +172,7 @@ body{
   font-size: 0.8em;
   text-align: left;
 }
-.buttom{
+.list > div a{
   display: inline;
   position: relative;
   color: #00A0E9;
@@ -180,7 +180,7 @@ body{
   border: 1px solid rgb(16,180,240);
   padding: 2% 8%;
 }
-.buttom:hover{
+.list > div a:hover{
   animation:buttom 1s forwards;
   -moz-animation:buttom 1s forwards;
   -webkit-animation:buttom 1s forwards;
@@ -279,7 +279,7 @@ body{
   color: white;
   position: relative;
   display: block;
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
 }
 @media (max-width: 767px) {
@@ -308,7 +308,10 @@ body{
   .list > div h1 {
     font-size: 0.5em;
   }
-  .list > div >div p{
+  #a-1{
+    opacity: 0;
+  }
+  .list > div > div p{
     font-size: 0.5em;
     text-indent: 2em;
   }
@@ -346,5 +349,6 @@ body{
   }
   .cm{
     top: -5%;
+    font-size: 1.5em;
   }
 }
